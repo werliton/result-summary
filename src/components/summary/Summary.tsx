@@ -93,7 +93,7 @@ const SumaryItem = ({ icon: Icon, name, value, color }: TItem) => {
 export const Summary = () => {
   return (
     <section className="p-4 summary">
-      <p className="font-semibold text-sm">Summary</p>
+      <h2 className="font-semibold text-sm">Summary</h2>
 
       <div className="flex flex-col gap-4 my-2">
         {ITEMS.map((item) => (

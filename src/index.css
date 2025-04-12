@@ -35,7 +35,7 @@ body {
 
 @media (min-width: 1280px) {
   .layout {
-    @apply flex-row gap-8 bg-white max-w-[40%] rounded-4xl;
+    @apply flex-row gap-8 bg-white max-w-[50%] h-[55%] rounded-4xl;
   }
 }
 
