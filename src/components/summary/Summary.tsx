@@ -75,14 +75,18 @@ const SumaryItem = ({ icon: Icon, name, value, color }: TItem) => {
 
   return (
     <div
-      className={clsx("flex justify-between p-3 rounded-xl text-xs", bg, hover)}
+      className={clsx(
+        "flex justify-between p-4 rounded-xl text-base",
+        bg,
+        hover
+      )}
     >
       <div className="flex gap-2">
         <img src={Icon} alt="logo" />
         <span className={clsx("font-black", text)}>{name}</span>
       </div>
 
-      <div className="text-sm opacity-70">
+      <div className="opacity-70">
         <span className="font-black">{value}</span>
         <span className="font-medium"> / 100</span>
       </div>
@@ -95,13 +99,13 @@ export const Summary = () => {
     <section className="p-4 summary">
       <h2 className="font-semibold text-sm">Summary</h2>
 
-      <div className="flex flex-col gap-4 my-2">
+      <div className="flex flex-col gap-6 my-8">
         {ITEMS.map((item) => (
           <SumaryItem key={item.name} {...item} />
         ))}
       </div>
 
-      <button className="bg-dark-gray-blue hover:bg-dark-gray-blue/80 text-white text-center font-medium mt-2 rounded-full w-full p-3">
+      <button className="bg-dark-gray-blue hover:bg-dark-gray-blue/80 text-white text-center font-medium mt-4 rounded-full w-full p-3">
         Continue
       </button>
     </section>
